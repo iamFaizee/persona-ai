@@ -81,7 +81,7 @@ function App() {
       { id: timestamp, role: 'user', content: message },
     ])
 
-    console.log('API_BASE_URL:', import.meta.env.VITE_API_BASE_URL)
+    // console.log('API_BASE_URL:', import.meta.env.VITE_API_BASE_URL)
 
     try {
       const response = await fetch(`${API_BASE_URL}/api/chat`, {
