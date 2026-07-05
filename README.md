@@ -4,6 +4,10 @@ Persona AI is a full-stack chat application that lets users talk with AI respons
 
 The project is built with a React + Vite frontend and an Express.js backend connected to the OpenAI API.
 
+## Live Demo
+
+[https://persona-ai-pi.vercel.app/](https://persona-ai-pi.vercel.app/)
+
 ## Features
 
 - Persona-based AI chat experience
@@ -119,7 +123,7 @@ MODEL=gpt-4.1-mini
 Create `frontend/persona-ai-frontend/.env`:
 
 ```env
-VITE_API_BASE_URL=https://persona-ai-backend-production-02e1.up.railway.app
+VITE_API_BASE_URL=https://your-backend-domain.com
 ```
 
 For local backend development, use:
@@ -187,16 +191,12 @@ npm run lint
 
 ## Deployment
 
-The backend is configured to run on Railway:
+The frontend can be deployed on platforms like Vercel, and the backend can be deployed on platforms like Railway, Render, or any Node.js hosting provider.
 
-```text
-https://persona-ai-backend-production-02e1.up.railway.app
-```
-
-When deploying the frontend, make sure to add this environment variable in the frontend hosting platform:
+When deploying the frontend, add the backend API URL as an environment variable in the frontend hosting platform:
 
 ```env
-VITE_API_BASE_URL=https://persona-ai-backend-production-02e1.up.railway.app
+VITE_API_BASE_URL=https://your-backend-domain.com
 ```
 
 ## Assignment Summary
